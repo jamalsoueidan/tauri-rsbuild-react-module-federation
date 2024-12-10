@@ -19,7 +19,7 @@ export default defineConfig({
   ],
   source: {
     entry: {
-      index: "./src/index.tsx",
+      index: "./src/main.tsx",
     },
   },
   server: {

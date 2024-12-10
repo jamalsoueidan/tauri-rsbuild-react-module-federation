@@ -1,7 +1,8 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
 import { invoke } from "@tauri-apps/api/core";
+import ProviderButton from "federation_provider/button";
+import { useState } from "react";
 import "./App.css";
+import reactLogo from "./assets/react.svg";
 
 function App() {
   const [greetMsg, setGreetMsg] = useState("");
@@ -26,6 +27,9 @@ function App() {
         <a href="https://reactjs.org" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
+      </div>
+      <div>
+        <ProviderButton />
       </div>
       <p>Click on the Tauri, Vite, and React logos to learn more.</p>
 
